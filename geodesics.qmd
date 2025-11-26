@@ -4,7 +4,6 @@ title: "Geodesics"
 
 Here is an excerpt from the GR lecture notes.
 
-
 ## Parallel-transport and geodesics
 
 ![Parallel transport of a vector $\vec{v}(\lambda)$ where $\lambda$ is an affine parameter. For geodesics the vector $\vec{v}$ is a tangent vector, $\vec{u}(\lambda)$.](parallel_transport.png){.invert-dark width=300 #fig-parallel-transport fig-alt="A line parametrized by lambda with a vector v(lambda) at each point along the line. The vector is shown to be parallel-transported along the line."}
@@ -12,7 +11,7 @@ Here is an excerpt from the GR lecture notes.
 We can use the idea of parallel transport to construct *geodesics*, defined as curves that parallel-transport their own tangent vectors. That is, for a geodesic
 
 $$
-\nabla_\vec{u} \vec{u} = 0
+\nabla_{\vec{u}} \vec{u} = 0
 $$
 
 $$
