@@ -7,20 +7,26 @@ Here is an excerpt from the GR lecture notes.
 
 ## Parallel-transport and geodesics
 
-![Parallel transport of a vector $\vec{v}(\lambda)$ where $\lambda$ is an affine parameter. For geodesics the vector $\vec{v}$ is a tangent vector, $\vec{u}(\lambda)$.](parallel_transport.png){width=300 #fig-parallel-transport}
+![Parallel transport of a vector $\vec{v}(\lambda)$ where $\lambda$ is an affine parameter. For geodesics the vector $\vec{v}$ is a tangent vector, $\vec{u}(\lambda)$.](parallel_transport.png){.invert-dark width=300 #fig-parallel-transport fig-alt="A line parametrized by lambda with a vector v(lambda) at each point along the line. The vector is shown to be parallel-transported along the line."}
 
 We can use the idea of parallel transport to construct *geodesics*, defined as curves that parallel-transport their own tangent vectors. That is, for a geodesic
 
 $$
-\begin{aligned}
-    \pmb{\nabla}_{\vec u} {\vec u} &= 0 \\
-    \text{i.e.} \qquad u^\beta {u^\alpha}_{;\beta} &= 0 \\
-    \text{i.e.} \qquad u^\beta {u^\alpha}_{,\beta} +
-        {\Gamma^\alpha}_{\beta\gamma} u^\beta u^\gamma &= 0 \\
-    \text{or} \qquad \frac{d}{d\lambda} \left( \frac{d x^\alpha}{d\lambda}
+\nabla_{\vec u} {\vec u} = 0
+$$
+
+$$
+\text{i.e.} \qquad u^\beta {u^\alpha}_{;\beta} = 0
+$$
+
+$$
+\text{i.e.} \qquad u^\beta {u^\alpha}_{,\beta} + {\Gamma^\alpha}_{\beta\gamma} u^\beta u^\gamma = 0 \\
+$$
+
+$$
+\text{or} \qquad \frac{d}{d\lambda} \left( \frac{d x^\alpha}{d\lambda}
         \right) + {\Gamma^\alpha}_{\beta\gamma} \frac{d x^\beta}{d\lambda} \frac{d
-        x^\gamma}{d\lambda} &= 0
-\end{aligned}
+        x^\gamma}{d\lambda} = 0
 $$
 
 where in the last of these expressions (often called the *geodesic equation*, though the first is also the geodesic equation), $\lambda$ is a continuous parameter along the curve.

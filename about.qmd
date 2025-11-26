@@ -2,4 +2,4 @@
 title: "About"
 ---
 
-About this site
+This is an example Quarto website created to demonstrate how to use Quarto for lecture notes. If you have any questions, feel free to email me at [Andy.Young@bristol.ac.uk](mailto:Andy.Young@bristol.ac.uk).

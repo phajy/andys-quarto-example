@@ -105,6 +105,7 @@ window.Quarto = {
 };
 </script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="nav-sidebar floating quarto-light"><script id="quarto-html-before-body" type="application/javascript">
@@ -295,6 +296,7 @@ window.Quarto = {
     <div class="sidebar-title mb-0 py-0">
       <a href="./">Quarto</a> 
         <div class="sidebar-tools-main">
+    <a href="./Quarto.pdf" title="Download PDF" class="quarto-navigation-tool px-1" aria-label="Download PDF"><i class="bi bi-file-pdf"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
     </div>
@@ -364,10 +366,10 @@ window.Quarto = {
 <p>Here is an excerpt from the GR lecture notes.</p>
 <section id="parallel-transport-and-geodesics" class="level2" data-number="2.1">
 <h2 data-number="2.1" class="anchored" data-anchor-id="parallel-transport-and-geodesics"><span class="header-section-number">2.1</span> Parallel-transport and geodesics</h2>
-<div id="fig-parallel-transport" class="quarto-float quarto-figure quarto-figure-center anchored">
+<div id="fig-parallel-transport" class="invert-dark quarto-float quarto-figure quarto-figure-center anchored" alt="A line parametrized by lambda with a vector v(lambda) at each point along the line. The vector is shown to be parallel-transported along the line.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-parallel-transport-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="parallel_transport.png" class="img-fluid figure-img" width="300">
+<img src="parallel_transport.png" class="invert-dark img-fluid figure-img" alt="A line parametrized by lambda with a vector v(lambda) at each point along the line. The vector is shown to be parallel-transported along the line." width="300">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-parallel-transport-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2.1: Parallel transport of a vector <span class="math inline">\(\vec{v}(\lambda)\)</span> where <span class="math inline">\(\lambda\)</span> is an affine parameter. For geodesics the vector <span class="math inline">\(\vec{v}\)</span> is a tangent vector, <span class="math inline">\(\vec{u}(\lambda)\)</span>.
@@ -376,15 +378,18 @@ Figure&nbsp;2.1: Parallel transport of a vector <span class="math inline">\(\vec
 </div>
 <p>We can use the idea of parallel transport to construct <em>geodesics</em>, defined as curves that parallel-transport their own tangent vectors. That is, for a geodesic</p>
 <p><span class="math display">\[
-\begin{aligned}
-    \pmb{\nabla}_{\vec u} {\vec u} &amp;= 0 \\
-    \text{i.e.} \qquad u^\beta {u^\alpha}_{;\beta} &amp;= 0 \\
-    \text{i.e.} \qquad u^\beta {u^\alpha}_{,\beta} +
-        {\Gamma^\alpha}_{\beta\gamma} u^\beta u^\gamma &amp;= 0 \\
-    \text{or} \qquad \frac{d}{d\lambda} \left( \frac{d x^\alpha}{d\lambda}
+\nabla_{\vec u} {\vec u} = 0
+\]</span></p>
+<p><span class="math display">\[
+\text{i.e.} \qquad u^\beta {u^\alpha}_{;\beta} = 0
+\]</span></p>
+<p><span class="math display">\[
+\text{i.e.} \qquad u^\beta {u^\alpha}_{,\beta} + {\Gamma^\alpha}_{\beta\gamma} u^\beta u^\gamma = 0 \\
+\]</span></p>
+<p><span class="math display">\[
+\text{or} \qquad \frac{d}{d\lambda} \left( \frac{d x^\alpha}{d\lambda}
         \right) + {\Gamma^\alpha}_{\beta\gamma} \frac{d x^\beta}{d\lambda} \frac{d
-        x^\gamma}{d\lambda} &amp;= 0
-\end{aligned}
+        x^\gamma}{d\lambda} = 0
 \]</span></p>
 <p>where in the last of these expressions (often called the <em>geodesic equation</em>, though the first is also the geodesic equation), <span class="math inline">\(\lambda\)</span> is a continuous parameter along the curve.</p>
 <p>We have some freedom to choose <span class="math inline">\(\lambda\)</span> – if we choose it to be the proper time of a particle with the curve as its world line, then <span class="math inline">\(\vec{u}\)</span> is the velocity of the particle. However, <span class="math inline">\(\lambda\)</span> is a more general quantity and can be used also for light rays with no proper time. Any linear transformation of <span class="math inline">\(\lambda\)</span>, such as <span class="math inline">\(\phi = a \lambda + b\)</span> with <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> constants, has <span class="math inline">\(\vec{x}(\phi)\)</span> a valid solution of the geodesic equation (try the transformation <span class="math inline">\(\lambda \to \phi\)</span>) – we refer to <span class="math inline">\(\lambda\)</span> (or <span class="math inline">\(\phi\)</span>) as an <strong>affine parameter</strong>.</p>

@@ -10,12 +10,14 @@ book:
     - index.qmd
     - geodesics.qmd
     - about.qmd
+  downloads: pdf
 
 editor:
   render-on-save: true
 
 format:
   html:
+    css: styles.css
     theme:
       light: flatly
       dark: darkly
