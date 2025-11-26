@@ -12,21 +12,19 @@ Here is an excerpt from the GR lecture notes.
 We can use the idea of parallel transport to construct *geodesics*, defined as curves that parallel-transport their own tangent vectors. That is, for a geodesic
 
 $$
-\nabla_{\vec u} {\vec u} = 0
+\nabla_\vec{u} \vec{u} = 0
 $$
 
 $$
-\text{i.e.} \qquad u^\beta {u^\alpha}_{;\beta} = 0
+u^\beta {u^\alpha}_{;\beta} = 0
 $$
 
 $$
-\text{i.e.} \qquad u^\beta {u^\alpha}_{,\beta} + {\Gamma^\alpha}_{\beta\gamma} u^\beta u^\gamma = 0 \\
+u^\beta {u^\alpha}_{,\beta} + {\Gamma^\alpha}_{\beta\gamma} u^\beta u^\gamma = 0 \\
 $$
 
 $$
-\frac{d}{d\lambda} \left( \frac{d x^\alpha}{d\lambda}
-        \right) + {\Gamma^\alpha}_{\beta\gamma} \frac{d x^\beta}{d\lambda} \frac{d
-        x^\gamma}{d\lambda} = 0
+\frac{d}{d\lambda} \left( \frac{d x^\alpha}{d\lambda} \right) + {\Gamma^\alpha}_{\beta\gamma} \frac{d x^\beta}{d\lambda} \frac{d x^\gamma}{d\lambda} = 0
 $$ {#eq-geodesic}
 
 where in the last of these expressions (often called the *geodesic equation*, though the first is also the geodesic equation), $\lambda$ is a continuous parameter along the curve.
