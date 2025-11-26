@@ -2,13 +2,21 @@ project:
   type: book
   output-dir: docs
 
+profile:
+  default: prob1ans
+
 book:
   title: "Quarto"
   author: "Dr Andrew Young"
   date: last-modified
   chapters:
     - index.qmd
-    - geodesics.qmd
+    - part: "Course notes"
+      chapters:
+      - geodesics.qmd
+    - part: "Problems"
+      chapters: 
+        - prob_class_1.qmd
     - about.qmd
   downloads: pdf
 

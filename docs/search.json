@@ -16,6 +16,7 @@
     "section": "",
     "text": "2.1 Parallel-transport and geodesics\nHere is an excerpt from the GR lecture notes.\nWe can use the idea of parallel transport to construct geodesics, defined as curves that parallel-transport their own tangent vectors. That is, for a geodesic\n\\[\n\\nabla_{\\vec u} {\\vec u} = 0\n\\]\n\\[\n\\text{i.e.} \\qquad u^\\beta {u^\\alpha}_{;\\beta} = 0\n\\]\n\\[\n\\text{i.e.} \\qquad u^\\beta {u^\\alpha}_{,\\beta} + {\\Gamma^\\alpha}_{\\beta\\gamma} u^\\beta u^\\gamma = 0 \\\\\n\\]\n\\[\n\\text{or} \\qquad \\frac{d}{d\\lambda} \\left( \\frac{d x^\\alpha}{d\\lambda}\n        \\right) + {\\Gamma^\\alpha}_{\\beta\\gamma} \\frac{d x^\\beta}{d\\lambda} \\frac{d\n        x^\\gamma}{d\\lambda} = 0\n\\]\nwhere in the last of these expressions (often called the geodesic equation, though the first is also the geodesic equation), \\(\\lambda\\) is a continuous parameter along the curve.\nWe have some freedom to choose \\(\\lambda\\) – if we choose it to be the proper time of a particle with the curve as its world line, then \\(\\vec{u}\\) is the velocity of the particle. However, \\(\\lambda\\) is a more general quantity and can be used also for light rays with no proper time. Any linear transformation of \\(\\lambda\\), such as \\(\\phi = a \\lambda + b\\) with \\(a\\), \\(b\\) constants, has \\(\\vec{x}(\\phi)\\) a valid solution of the geodesic equation (try the transformation \\(\\lambda \\to \\phi\\)) – we refer to \\(\\lambda\\) (or \\(\\phi\\)) as an affine parameter.\nIn a locally-flat region, where the Christoffel symbols vanish, clearly the geodesic equation reduces to\n\\[\n\\frac{d^2 x^\\alpha}{d\\lambda^2} = 0\n\\]\nwhich solves to the straight-line solution\n\\[\nx^\\alpha = A^\\alpha \\lambda + B^\\alpha.\n\\]\nIn fact we can say, in a very real sense, that all geodesics are straight. This definition about “parallel transport of the tangent vector” is the only sensible definition of a straight line – it means that the curve at each point keeps moving in the direction of its local tangent vector. No other frame-independent definition of “straight” makes sense.",
     "crumbs": [
+      "Course notes",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Geodesics</span>"
     ]
   },
@@ -26,17 +27,40 @@
     "section": "",
     "text": "Figure 2.1: Parallel transport of a vector \\(\\vec{v}(\\lambda)\\) where \\(\\lambda\\) is an affine parameter. For geodesics the vector \\(\\vec{v}\\) is a tangent vector, \\(\\vec{u}(\\lambda)\\).",
     "crumbs": [
+      "Course notes",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Geodesics</span>"
+    ]
+  },
+  {
+    "objectID": "prob_class_1.html",
+    "href": "prob_class_1.html",
+    "title": "3  Problems 1",
+    "section": "",
+    "text": "3.1 Gravitational potential\nAn example question from the first problems class.\nA uniform spherical mass, \\(M\\), has radius \\(R\\).",
+    "crumbs": [
+      "Problems",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problems 1</span>"
+    ]
+  },
+  {
+    "objectID": "prob_class_1.html#gravitational-potential",
+    "href": "prob_class_1.html#gravitational-potential",
+    "title": "3  Problems 1",
+    "section": "",
+    "text": "Calculate the Newtonian gravitational potential function \\(\\Phi(r)\\), from the Poisson equation in the form\n\\[ \\frac{1}{r^2} \\frac{d}{dr}\\left( r^2 \\frac{d \\Phi}{dr} \\right) = 4 \\pi G \\rho \\]\nappropriate for a spherically-symmetric object, where \\(\\rho\\) is the (constant) density of the mass.\n\n\n\n\n\n\n\nTipAnswer to part (a)\n\n\n\n\n\nThe Poisson equation\n\\[ \\frac{1}{r^2} \\frac{d}{dr}\\left( r^2 \\frac{d \\Phi}{dr} \\right) = 4 \\pi G \\rho \\]\nfor a Newtonian potential can be integrated once as\n\\[ r^2 \\frac{d \\Phi}{dr} = \\int 4 \\pi G \\rho r^2 \\, dr + C_1 \\]\nwhere \\(C_1\\) is a first integration constant (this is an indefinite integral). For a constant-density object of radius \\(R\\) there are two cases to consider — with \\(r \\le R\\) and with \\(r \\ge R\\).\nFor \\(r \\le R\\),\n\\[ r^2 \\frac{d \\Phi}{dr} = C_1 + \\frac{4}{3} \\pi G \\rho r^3 \\]\nwhere \\(C_1\\) is the first constant of integration. Then\n\\[ \\Phi(r) = \\int \\frac{C_1}{r^2} \\, dr + C_2 + \\frac{4}{3} \\pi G \\rho \\int r \\, dr = -\\frac{C_1}{r} + C_2 + \\frac{2}{3} \\pi G \\rho r^2 \\, .\\]\nThe \\(C_1\\) term represents the effect of a point mass at the centre of the body, but we don’t have one here, so \\(C_1 = 0\\). \\(C_2\\) will be found by matching solutions with the exterior solution: being a constant added to the potential, it doesn’t represent a gravitational force.\nAt \\(r \\ge R\\),\n\\[ r^2 \\frac{d \\Phi}{dr} = D_1 + \\frac{4}{3} \\pi G \\rho R^3 \\]\nwhere we apparently need \\(D_1\\) as a constant of integration. Rearrange and integrate again,\n\\[ \\Phi(r) = -\\frac{D_1}{r} - \\frac{4}{3} \\frac{\\pi G \\rho R^3}{r} + D_2 \\, .\\]\nHere we can set \\(D_2 = 0\\), since by convention we put \\(\\Phi \\rightarrow 0\\) as \\(r \\rightarrow \\infty\\). \\(D_1\\) can also be taken as zero since it also represents a gravitational potential from a point mass at \\(r = 0\\), and none is present.\nIt remains to match the solutions at \\(r = R\\), so that there isn’t an infinite force felt there. This means that\n\\[ C_2 + \\frac{2}{3} \\pi G \\rho R^2 = - \\frac{4}{3} \\pi G \\rho R^2 \\]\nso\n\\[ C_2 = - 2 \\pi G \\rho R^2 \\]\nand the overall solution is\n\\[ \\Phi(r) = \\begin{cases}\n- 2 \\pi G \\rho R^2 \\left( 1 - \\frac{1}{3} \\left( \\frac{r^2}{R^2} \\right) \\right) & r \\le R \\\\\n- \\frac{4}{3} \\frac{\\pi G \\rho R^3}{r} & r \\ge R\n\\end{cases}\n\\]\nwhich can be written in terms of mass as\n\\[\n\\Phi(r) = - \\frac{G M}{R}\n           \\begin{cases}\n                   \\frac{3}{2} - \\frac{1}{2}\\left( \\frac{r^2}{R^2} \\right) & r \\le R \\\\\n                   \\frac{R}{r} & r \\ge R\n           \\end{cases}\n\\]\nThe maximum (negative) potential is at \\(r = 0\\), and has value\n\\[\n\\Phi_0 = -\\frac{3}{2} \\frac{G M}{R} \\, .\n\\]",
+    "crumbs": [
+      "Problems",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Problems 1</span>"
     ]
   },
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "3  About",
+    "title": "4  About",
     "section": "",
     "text": "This is an example Quarto website created to demonstrate how to use Quarto for lecture notes. If you have any questions, feel free to email me at Andy.Young@bristol.ac.uk.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>About</span>"
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>About</span>"
     ]
   }
 ]

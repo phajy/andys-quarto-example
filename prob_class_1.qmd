@@ -1,0 +1,83 @@
+---
+title: "Problems 1"
+---
+
+An example question from the first problems class.
+
+## Gravitational potential
+
+A uniform spherical mass, $M$, has radius $R$.
+
+(a) Calculate the Newtonian gravitational potential function $\Phi(r)$, from the Poisson equation in the form
+
+    $$ \frac{1}{r^2} \frac{d}{dr}\left( r^2 \frac{d \Phi}{dr} \right) = 4 \pi G \rho $$
+
+    appropriate for a spherically-symmetric object, where $\rho$ is the (constant) density of the mass.
+
+::: {.content-visible when-profile="prob1ans"}
+::: {.callout-tip collapse=true}
+## Answer to part (a)
+The Poisson equation
+
+$$ \frac{1}{r^2} \frac{d}{dr}\left( r^2 \frac{d \Phi}{dr} \right) = 4 \pi G \rho $$
+
+for a Newtonian potential can be integrated once as
+
+$$ r^2 \frac{d \Phi}{dr} = \int 4 \pi G \rho r^2 \, dr + C_1 $$
+
+where $C_1$ is a first integration constant (this is an indefinite integral). For a constant-density object of radius $R$ there are two cases to consider --- with $r \le R$ and with $r \ge R$.
+
+For $r \le R$,
+
+$$ r^2 \frac{d \Phi}{dr} = C_1 + \frac{4}{3} \pi G \rho r^3 $$
+
+where $C_1$ is the first constant of integration. Then
+
+$$ \Phi(r) = \int \frac{C_1}{r^2} \, dr + C_2 + \frac{4}{3} \pi G \rho \int r \, dr = -\frac{C_1}{r} + C_2 + \frac{2}{3} \pi G \rho r^2 \, .$$
+
+The $C_1$ term represents the effect of a point mass at the centre of the body, but we don't have one here, so $C_1 = 0$. $C_2$ will be found by matching solutions with the exterior solution: being a constant added to the potential, it doesn't represent a gravitational force.
+
+At $r \ge R$,
+    
+$$ r^2 \frac{d \Phi}{dr} = D_1 + \frac{4}{3} \pi G \rho R^3 $$
+
+where we apparently need $D_1$ as a constant of integration. Rearrange and integrate again,
+
+$$ \Phi(r) = -\frac{D_1}{r} - \frac{4}{3} \frac{\pi G \rho R^3}{r} + D_2 \, .$$
+
+Here we can set $D_2 = 0$, since by convention we put $\Phi \rightarrow 0$ as $r \rightarrow \infty$. $D_1$ can also be taken as zero since it also represents a gravitational potential from a point mass at $r = 0$, and none is present.
+
+It remains to match the solutions at $r = R$, so that there isn't an infinite force felt there. This means that
+
+$$ C_2 + \frac{2}{3} \pi G \rho R^2 = - \frac{4}{3} \pi G \rho R^2 $$
+
+so
+
+$$ C_2 = - 2 \pi G \rho R^2 $$
+
+and the overall solution is
+
+$$ \Phi(r) = \begin{cases}
+- 2 \pi G \rho R^2 \left( 1 - \frac{1}{3} \left( \frac{r^2}{R^2} \right) \right) & r \le R \\
+- \frac{4}{3} \frac{\pi G \rho R^3}{r} & r \ge R
+\end{cases}
+$$
+
+which can be written in terms of mass as
+
+$$
+ \Phi(r) = - \frac{G M}{R}
+           \begin{cases}
+                   \frac{3}{2} - \frac{1}{2}\left( \frac{r^2}{R^2} \right) & r \le R \\
+                   \frac{R}{r} & r \ge R
+           \end{cases}
+$$
+
+The maximum (negative) potential is at $r = 0$, and has value
+
+$$
+ \Phi_0 = -\frac{3}{2} \frac{G M}{R} \, .
+$$
+
+:::
+:::
