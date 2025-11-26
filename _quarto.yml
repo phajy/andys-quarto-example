@@ -1,22 +1,25 @@
 project:
-  type: website
+  type: book
   output-dir: docs
 
-website:
-  title: "Andy's Quarto Example"
-  navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: geodesics.qmd
-        text: Geodesics
-      - about.qmd
+book:
+  title: "Quarto"
+  author: "Dr Andrew Young"
+  date: last-modified
+  chapters:
+    - index.qmd
+    - geodesics.qmd
+    - about.qmd
+
+editor:
+  render-on-save: true
 
 format:
   html:
-    theme: cosmo
-    css: styles.css
-    toc: true
-
-
-
+    theme:
+      light: flatly
+      dark: darkly
+    citations-hover: true
+  pdf:
+    documentclass: scrreprt
+    lang: en-GB

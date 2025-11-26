@@ -1,6 +1,11 @@
-## Parallel-transport and geodesics
+---
+title: "Geodesics"
+---
 
 Here is an excerpt from the GR lecture notes.
+
+
+## Parallel-transport and geodesics
 
 ![Parallel transport of a vector $\vec{v}(\lambda)$ where $\lambda$ is an affine parameter. For geodesics the vector $\vec{v}$ is a tangent vector, $\vec{u}(\lambda)$.](parallel_transport.png){width=300 #fig-parallel-transport}
 

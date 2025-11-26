@@ -1,5 +1,5 @@
 ---
-title: "Andy's Quarto Example"
+title: "Welcome"
 ---
 
 This is a Quarto website.
