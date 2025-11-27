@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Quarto",
     "section": "",
-    "text": "This is a Quarto website in “book” style.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nThis is an example showing how I use Quarto for my lectures notes. I wrote a blog post about it here.",
+    "text": "This is a Quarto website in “book” style.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nThis is an example showing how I use Quarto for my lectures notes.\nThe source files are available on GitHub.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome</span>"
     ]

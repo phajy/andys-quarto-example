@@ -6,4 +6,6 @@ This is a Quarto website in "book" style.
 
 To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
 
-This is an example showing how I use Quarto for my lectures notes. I wrote a blog post about it [here](https://phajy.github.io/).
+This is an example showing how I use Quarto for my lectures notes.
+
+The source files are available on [GitHub](https://github.com/phajy/andys-quarto-example).
